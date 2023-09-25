@@ -125,17 +125,15 @@ header.sticky #contact{
 
 .menu-bar{
     position: fixed;
-    left: 60%;
     background-color: white;
     width: 300px;
     opacity: 1;
-    height: 0;
-    overflow: hidden;
+    transform: translateX(-100%);
     z-index: 1;
 }
 
 .menu-bar.open{
-    height: 205px;
+    transform: translateX(0px);
 }
 
 .menu-bar .navbar li{
@@ -328,6 +326,7 @@ img{
     .menu-bar.open{
         height: 205px;
         transition: 0.6s linear;
+        left: 60%;
     }
 
     /* open */
