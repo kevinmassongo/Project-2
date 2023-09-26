@@ -164,7 +164,7 @@ header.sticky #contact{
     max-width: 1200px;
     margin: auto;
     z-index: 0;
-    height: 100vh;
+    height: 90vh;
 }
 
 .home-content{
@@ -191,14 +191,15 @@ img{
     position: relative;
     display: flex;
     z-index: 0;
+    gap: 10px;
 }
 
 .contact-me li{
     list-style: none;
-    margin: 20px 20px 20px 0;
+    margin: 20px 0px 20px 0;
 }
 
-.contact-me li a{
+.contact-me .download{
     text-decoration: none;
     background-color: #0ef;
     padding: 10px;
@@ -213,15 +214,28 @@ img{
     border: 1px solid white;
 }
 
+.contact-me .hire:hover{
+    background-color: #0ef;
+    transition: all 0.5s linear;
+    border: none;
+}
+
+.contact-me .hire{
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px; 
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid white;
+}
+
 .home .icons{
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
     font-size: 1.2rem;
     cursor: pointer;
     font-weight: bold;
-}
-
-.home .icons i{
-    margin-right: 15px;
+    gap: 10px;
 }
 
 .fa-brands:hover{
@@ -238,6 +252,8 @@ img{
 }
 
 /* About */
+
+
 
 .about .container{
     display: flex;
@@ -310,6 +326,24 @@ img{
         height: 300px;
         object-fit: cover;
     }
+    /* About */
+    .about .container{
+        max-width: 90%;
+    }
+    .paragraph{
+        display: none;
+    }
+    .paragraph.reduce{
+        display: block;
+        transition: 0.5s linear;
+    }
+    .about .container .column-one img{
+        margin-top: 20px;
+    }
+    #paragraph-click{
+        display: block;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -329,6 +363,14 @@ img{
         left: 60%;
     }
 
+    header.sticky .container .logo{
+        font-size: 1.2rem;
+    }
+
+    header.sticky .container .icon i{ 
+        color: #081C29;
+    }
+
     /* open */
     .home .home-content{
         max-width: 400px;
@@ -346,6 +388,24 @@ img{
     }
     .text{
         font-size: 1rem;
+    }
+
+    .contact-me .download{
+        text-decoration: none;
+        background-color: #0ef;
+        padding: 8px;
+        border-radius: 4px; 
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .contact-me .hire{
+        text-decoration: none;
+        background-color: transparent;
+        padding: 8px;
+        border-radius: 4px; 
+        font-size: 1rem;
+        font-weight: 600;
     }
 
     /* About */
@@ -404,6 +464,13 @@ img{
         right: 0%;
         width: 100%;
     }
+    header.sticky .container .logo{
+        font-size: 1.2rem;
+    }
+
+    header.sticky .container .icon i{ 
+        color: #081C29;
+    }
 
      /* open */
      .home .home-content{
@@ -427,15 +494,39 @@ img{
         height: 150px;
         object-fit: cover;
     }
+
+    .contact-me .download{
+        text-decoration: none;
+        background-color: #0ef;
+        padding: 7px;
+        border-radius: 4px; 
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .contact-me .hire{
+        text-decoration: none;
+        background-color: transparent;
+        padding: 7px;
+        border-radius: 4px; 
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .contact-me{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .home .icons{
         margin-top: 5px;
         font-size: 0.8rem;
         cursor: pointer;
         font-weight: 800;
     }
-    .home .icons i{
-        margin: 5px 5px 0 0;
-    }
+
     .home{
         flex-direction: column;
     }
@@ -531,9 +622,18 @@ img{
         height: 120px;
         object-fit: cover;
     }
-    .contact-me li a{
+    .contact-me .download{
         text-decoration: none;
         background-color: #0ef;
+        padding: 5px;
+        border-radius: 4px; 
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .contact-me .hire{
+        text-decoration: none;
+        background-color: transparent;
         padding: 5px;
         border-radius: 4px; 
         font-size: 0.8rem;
@@ -544,9 +644,10 @@ img{
         font-size: 0.8rem;
         cursor: pointer;
         font-weight: 800;
-    }
-    .home .icons i{
-        margin: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     .home{
         flex-direction: column;
@@ -590,6 +691,12 @@ img{
 
     .about .container .column-one img{
         margin-top: 30px;
+    }
+    .contact-me{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 }
 

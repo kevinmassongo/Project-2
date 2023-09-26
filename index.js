@@ -21,6 +21,9 @@ icon.onclick = function(){
     : "fa-solid fa-bars"
 }
 
+
+// skills
+
 let typed = new Typed('.text', {
     strings : ["Frontend Developer", "Graphic Designer", "Web Developer", "Mobile Developer"],
     typeSpeed : 100,
