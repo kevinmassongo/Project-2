@@ -25,7 +25,7 @@ icon.onclick = function(){
 // skills
 
 let typed = new Typed('.text', {
-    strings : ["Frontend Developer", "Graphic Designer", "Web Developer", "Mobile Developer"],
+    strings : ["Développeur frontend", "Graphiste Designer", "Développeur web", "Développeur mobile"],
     typeSpeed : 100,
     backSpeed : 100,
     backDelay : 1000, 
