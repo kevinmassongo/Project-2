@@ -32,14 +32,5 @@ let typed = new Typed('.text', {
     loop : true
 })
 
-// Read More
-const clickMore = document.getElementById('paragraph-click')
-const paragraph = document.querySelector('.paragraph');
 
-clickMore.addEventListener('click', addClick)
-
-function addClick(){
-    paragraph.classList.toggle('reduce')
-    clickMore.textContent = 'Reduce About Me'
-}
 

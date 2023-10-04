@@ -239,14 +239,14 @@ img{
     gap: 10px;
 }
 
-.fa-brands:hover{
+.home .icons i:hover{
     background-color: #0ef;  
     color: black; 
     border: none;
     font-weight: bold;
 }
 
-.fa-brands{
+.home .icons i{
     border: 1px solid white;
     border-radius: 50%;
     padding: 10px;
@@ -268,12 +268,12 @@ img{
     max-width: 50%;
 }
 
-.h2-about{
+.h1-about{
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.h2-about span{
+.h1-about span{
     color: #0ef;    
 }
 
@@ -303,19 +303,17 @@ img{
     padding: 100px;
 }
 
-.service .container .text{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.service .container .text h2{
+.service .text h1{
     font-size: 2.5rem;
+    text-align: center;
 }
 
-.service .container .text h2 span{
+.service .text h1 span{
     color: #0ef;
 }
+
+
+
 
 @media screen and (max-width: 1024px) {
     .container .logo{
@@ -339,14 +337,14 @@ img{
     .about .container{
         max-width: 90%;
     }
-    .about .container .column-two h2{
+    .about .container .column-two h1{
         position: relative;
         width: 100%;
         left: 1%;
         font-size: 1.5rem;
     }
 
-    .about .container .column-two h3{
+    .about .container .column-two h2{
         font-size: 1.2rem;
     }
 
@@ -356,10 +354,7 @@ img{
     .paragraph{
         display: none;
     }
-    .paragraph.reduce{
-        display: block;
-        transition: 0.5s linear;
-    }
+
     .about .container .column-one img{
         margin-top: 20px;
     }
@@ -441,7 +436,7 @@ img{
         max-width: 50%;
     }
 
-    .about .container .column-two h2{
+    .about .container .column-two h1{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -455,10 +450,7 @@ img{
     .paragraph{
         display: none;
     }
-    .paragraph.reduce{
-        display: block;
-        transition: 0.5s linear;
-    }
+
     .about .container .column-one img{
         margin-top: 30px;
     }
@@ -544,7 +536,7 @@ img{
     }
 
     .home .icons{
-        margin-top: 5px;
+        text-align: center;
         font-size: 0.8rem;
         cursor: pointer;
         font-weight: 800;
@@ -578,14 +570,14 @@ img{
         width: 100%;
     }
 
-    .about .container .column-two h2{
+    .about .container .column-two h1{
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.3rem;
     }
 
-    .about .container .column-two h3{
+    .about .container .column-two h2{
         display: flex;
         justify-content: center;
         align-items: center;    
@@ -675,10 +667,8 @@ img{
         font-size: 0.8rem;
         cursor: pointer;
         font-weight: 800;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 100%;
+        text-align: center;
     }
     .home{
         flex-direction: column;
@@ -709,14 +699,14 @@ img{
         text-align: center;
     }
 
-    .about .container .column-two h2{
+    .about .container .column-two h1{
         position: relative;
         width: 100%;
         left: 1%;
         font-size: 1.2rem;
     }
 
-    .about .container .column-two h3{
+    .about .container .column-two h2{
         font-size: 1rem;
     }
 
