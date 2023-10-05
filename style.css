@@ -172,6 +172,17 @@ header.sticky #contact{
     animation: slideLeft 1s ease forwards;
 }
 
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
 .home-content h1{
     font-size: 3rem;
     font-size: bold;
@@ -849,14 +860,4 @@ img{
 
 }
 
-@keyframes slideLeft {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0px);
-        opacity: 1;
-    }
-}
 
