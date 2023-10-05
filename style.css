@@ -260,7 +260,7 @@ img{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -312,7 +312,71 @@ img{
     color: #0ef;
 }
 
+.service .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
 
+.service .container .technic{
+    text-align: center;
+}
+.onePart .bar{
+    margin-top: 20px
+}
+.onePart .bar .progress-line{
+    position: relative;
+    font-weight: bold;
+    height: 5px;
+    width: 600px;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.onePart .bar .progress-line span{
+    position: absolute;
+    font-weight: bold;
+    height: 100%;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    background-color: #0ef;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100%{
+        transform: scale(1);
+    }
+}
+
+.progress-line.html span{
+    width: 90%;
+}
+
+.progress-line.css span{
+    width: 85%;
+}
+
+.progress-line.js span{
+    width: 75%;
+}
+
+.progress-line.react span{
+    width: 80%;
+}
+
+.progress-line.node span{
+    width: 70%;
+}
+
+.progress-line.github span{
+    width: 85%;
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -458,6 +522,22 @@ img{
         display: block;
         margin-bottom: 30px;
     }
+    .h1-about span{
+        margin-left: 5px;
+    }
+        /* Service */
+
+
+    .service .text h1{
+        font-size: 1.5rem;
+    }
+    .service h2{
+        font-size: 1.3rem;
+    }
+    .onePart .bar .progress-line{
+        width: 500px;
+        margin-top: 5px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -545,7 +625,7 @@ img{
     .home{
         flex-direction: column;
     }
-    .fa-brands{
+    .home .icons i{
         border: 1px solid white;
         border-radius: 50%;
         padding: 5px;
@@ -596,6 +676,27 @@ img{
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+    .h1-about span{
+        margin-left: 5px;
+    }
+
+    /* Service */
+
+    .service{
+        margin-top: -50px;
+    }
+
+    .service .text h1{
+        /* position: absolute; */
+        font-size: 1.3rem;
+    }
+    .service h2{
+        font-size: 1.1rem;
+    }
+    .onePart .bar .progress-line{
+        width: 300px;
+        margin-top: 5px;
     }
 }
 
@@ -673,7 +774,7 @@ img{
     .home{
         flex-direction: column;
     }
-    .fa-brands{
+    .home .icons i{
         border: 1px solid white;
         border-radius: 50%;
         padding: 5px;
@@ -695,14 +796,15 @@ img{
     }
 
     .about .container .column-two{
-        max-width: 80%;
-        text-align: center;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .about .container .column-two h1{
-        position: relative;
-        width: 100%;
-        left: 1%;
+        text-align: center;
         font-size: 1.2rem;
     }
 
@@ -717,12 +819,34 @@ img{
     .about .container .column-one img{
         margin-top: 30px;
     }
+    .h1-about span{
+        margin-left: 5px;
+    }
     .contact-me{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
+
+    /* Service */
+
+    .service{
+        margin-top: -30px;
+    }
+
+    .service .text h1{
+        /* position: absolute; */
+        font-size: 1.2rem;
+    }
+    .service h2{
+        font-size: 1rem;
+    }
+    .onePart .bar .progress-line{
+        width: 250px;
+        margin-top: 5px;
+    }
+
 }
 
 @keyframes slideLeft {
@@ -735,3 +859,4 @@ img{
         opacity: 1;
     }
 }
+
