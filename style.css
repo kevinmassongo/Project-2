@@ -160,12 +160,15 @@ header.sticky #contact{
 .home{
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 90vh;
+}
+.home .container{
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
     margin: auto;
     z-index: 0;
-    height: 90vh;
 }
 
 .home-content{
@@ -185,11 +188,15 @@ header.sticky #contact{
 
 .home-content h1{
     font-size: 3rem;
-    font-size: bold;
+    font-weight: bold;
 }
 
 .home-content .greets{
     font-size: 2rem;
+}
+
+.home .home-content p{
+    max-width: 85%;
 }
 
 img{
@@ -217,19 +224,8 @@ img{
     padding: 10px;
     border-radius: 5px; 
     font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.contact-me li a:hover{
-    background-color: transparent;
-    transition: 0.5s linear;
-    border: 1px solid white;
-}
-
-.contact-me .hire:hover{
-    background-color: #0ef;
-    transition: all 0.5s linear;
-    border: none;
+    font-weight: 700;
+    color: black;
 }
 
 .contact-me .hire{
@@ -238,9 +234,25 @@ img{
     padding: 10px;
     border-radius: 5px; 
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
     border: 1px solid white;
 }
+
+.contact-me li a:hover{
+    background-color: transparent;
+    transition: 0.5s linear;
+    border: 1px solid white;
+    color: white;
+}
+
+.contact-me .hire:hover{
+    background-color: #0ef;
+    color: black;
+    transition: all 0.5s linear;
+    border: none;
+}
+
+
 
 .home .icons{
     margin: 10px 0 10px 0;
@@ -332,7 +344,7 @@ img{
 
 .service .container .boxOne{
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 50px;
 }
 
@@ -391,13 +403,6 @@ img{
 
 .onePart .bar #wordpress::before{
     content: " WordPress 85 %";
-}
-
-.service .container .boxOne .twoPart{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -520,12 +525,24 @@ img{
     }
 
     /* open */
+    .home{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        z-index: 0;
+    }
 
     .home .home-content h1{
         font-size: 1.8rem;
     }
     .home .home-content h3{
         font-size: 1.2rem;
+    }
+    .home .home-content p{
+        max-width: 80%;
     }
     img{
         width: 300px;
@@ -561,6 +578,32 @@ img{
         display: block;
         margin-bottom: 30px;
     }
+
+    /* Service */
+
+    .service .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 50px;
+        margin: auto;
+    }
+    .service .text h1{
+        font-size: 1.5rem;
+    }
+
+    .service .technic{
+        font-size: 1.3rem;
+    }
+    .onePart .bar .progress-line{
+        width: 425px;
+        margin-top: 5px;
+    }
+    .twoPart .bar .progress-line{
+        width: 425px;
+        margin-top: 5px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -578,6 +621,7 @@ img{
         height: 205px;
         transition: 0.6s linear;
         left: 60%;
+        height: 170px;
     }
 
     header.sticky .container .logo{
@@ -589,15 +633,29 @@ img{
     }
 
     /* open */
-    .home .home-content{
-        max-width: 400px;
+    .home .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
     }
+    .home .home-content{
+        max-width: 90%;
+     }
+
     .home .home-content h1{
         font-size: 1.5rem;
     }
     .home .home-content h3{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
+    .home-picture img{
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+    }
+
     img{
         width: 200px;
         height: 200px;
@@ -632,17 +690,15 @@ img{
     }
 
     .about .container .column-two{
-        max-width: 50%;
+        max-width: 100%;
     }
 
     .about .container .column-two h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 1.5rem;
     }
 
     .about .container .column-two p{
+        text-align: center;
         font-size: 1rem;
     }
 
@@ -673,8 +729,15 @@ img{
         font-size: 1.3rem;
     }
     .onePart .bar .progress-line{
-        width: 500px;
+        width: 375px;
         margin-top: 5px;
+    }
+    .twoPart .bar .progress-line{
+        width: 375px;
+        margin-top: 5px;
+    }
+    #html, #css, #js, #react, #node, #wordpress, #github, #git, #vscode, #asana, #figma::before{
+        font-size: 0.85rem;
     }
 }
 
@@ -696,6 +759,7 @@ img{
         left: 0%;
         right: 0%;
         width: 100%;
+        height: 170px;
     }
     header.sticky .container .logo{
         font-size: 1.2rem;
@@ -706,6 +770,13 @@ img{
     }
 
      /* open */
+     .home .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
      .home .home-content{
         max-width: 90%;
      }
@@ -840,6 +911,9 @@ img{
         width: 280px;
         margin-top: 5px;
     }
+    #html, #css, #js, #react, #node, #wordpress, #github, #git, #vscode, #asana, #figma::before{
+        font-size: 0.85rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -860,6 +934,7 @@ img{
         left: 0%;
         right: 0%;
         width: 100%;
+        height: 170px;
     }
 
     header.sticky .container .logo{
@@ -870,7 +945,13 @@ img{
         color: #081C29;
     }
      /* open */
-
+     .home .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
     .home .home-content{
         max-width: 90%;
     }
@@ -882,6 +963,11 @@ img{
     }
     .home .home-content p{
         font-size: 0.8rem;
+    }
+    .home-picture img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
     }
     img{
         width: 120px;
@@ -913,7 +999,7 @@ img{
         width: 100%;
         text-align: center;
     }
-    .home{
+    .home .container{
         flex-direction: column;
     }
     .home .icons i{
@@ -935,14 +1021,6 @@ img{
         align-items: center;
         width: 100%;
         flex-direction: column-reverse;
-    }
-
-    .about .container .column-two{
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 
     .about .container .column-two h1{
@@ -978,10 +1056,9 @@ img{
     }
 
     .service .text h1{
-        /* position: absolute; */
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
-    .service h2{
+    .service .technic{
         font-size: 1rem;
     }
     .onePart .bar .progress-line{
@@ -992,7 +1069,9 @@ img{
         width: 220px;
         margin-top: 5px;
     }
-
+    #html, #css, #js, #react, #node, #wordpress, #github, #git, #vscode, #asana, #figma::before{
+        font-size: 0.8rem;
+    }
 }
 
 
