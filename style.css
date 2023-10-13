@@ -314,6 +314,7 @@ img{
     padding: 100px;
 }
 
+
 .service .text h1{
     font-size: 2.5rem;
     text-align: center;
@@ -326,8 +327,13 @@ img{
 .service .container{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 2rem;
+}
+
+.service .container .boxOne{
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .service .container .technic{
@@ -336,11 +342,15 @@ img{
 .onePart .bar{
     margin-top: 20px
 }
+
+.service .container .onePart{
+    flex-direction: column;
+}
 .onePart .bar .progress-line{
     position: relative;
     font-weight: bold;
     height: 5px;
-    width: 600px;
+    width: 500px;
     border-radius: 10px;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
     background-color: #000;
@@ -357,6 +367,84 @@ img{
     background-color: #0ef;
     transform: scaleX(0);
     transform-origin: left;
+}
+
+.onePart .bar #html::before{
+    content: " HTML 90 %";
+}
+
+.onePart .bar #css::before{
+    content: " CSS 85 %";
+}
+
+.onePart .bar #js::before{
+    content: " JavaScript 75 %";
+}
+
+.onePart .bar #react::before{
+    content: " React JS 80 %";
+}
+
+.onePart .bar #node::before{
+    content: " Node JS 70 %";
+}
+
+.onePart .bar #wordpress::before{
+    content: " WordPress 85 %";
+}
+
+.service .container .boxOne .twoPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.twoPart .bar{
+    margin-top: 20px
+}
+.twoPart .bar .progress-line{
+    position: relative;
+    font-weight: bold;
+    height: 5px;
+    width: 500px;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.twoPart .bar .progress-line span{
+    position: absolute;
+    font-weight: bold;
+    height: 100%;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    background-color: #0ef;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.twoPart .bar #github::before{
+    content: " Github 85 %";
+}
+
+.twoPart .bar #git::before{
+    content: " Git 85 %";
+}
+
+.twoPart .bar #vscode::before{
+    content: " VS Code 85 %";
+}
+
+.twoPart .bar #asana::before{
+    content: " Asana 60 %";
+}
+
+.twoPart .bar #figma::before{
+    content: " Figma 70 %";
 }
 
 @keyframes animate {
@@ -387,6 +475,42 @@ img{
 
 .progress-line.github span{
     width: 85%;
+}
+
+.progress-line.wordpress span{
+    width: 85%;
+}
+
+.progress-line.git span{
+    width: 85%;
+}
+
+.progress-line.vscode span{
+    width: 85%;
+}
+
+.progress-line.asana span{
+    width: 60%;
+}
+
+.progress-line.figma span{
+    width: 70%;
+}
+
+.asanas{
+    border-radius: 0;
+    height: 10px;
+    width: 10%;
+    object-fit: cover;
+    color: white;
+}
+
+.vs{
+    border-radius: 0;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    color: white;
 }
 
 
@@ -537,7 +661,10 @@ img{
         margin-left: 5px;
     }
         /* Service */
-
+    .service .container .boxOne{
+        flex-direction: column;
+        gap: 50px;
+    }
 
     .service .text h1{
         font-size: 1.5rem;
@@ -706,7 +833,11 @@ img{
         font-size: 1.1rem;
     }
     .onePart .bar .progress-line{
-        width: 300px;
+        width: 280px;
+        margin-top: 5px;
+    }
+    .twoPart .bar .progress-line{
+        width: 280px;
         margin-top: 5px;
     }
 }
@@ -854,7 +985,11 @@ img{
         font-size: 1rem;
     }
     .onePart .bar .progress-line{
-        width: 250px;
+        width: 220px;
+        margin-top: 5px;
+    }
+    .twoPart .bar .progress-line{
+        width: 220px;
         margin-top: 5px;
     }
 
