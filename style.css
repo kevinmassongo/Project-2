@@ -252,8 +252,6 @@ header.sticky #contact{
     border: none;
 }
 
-
-
 .home .icons{
     margin: 10px 0 10px 0;
     font-size: 1.2rem;
@@ -273,6 +271,10 @@ header.sticky #contact{
     border: 1px solid white;
     border-radius: 50%;
     padding: 10px;
+}
+
+.author{
+    width: 50%;
 }
 
 /* About */
@@ -555,6 +557,11 @@ header.sticky #contact{
     width: 100%;
 }
 
+.paragraph-project-one{
+    width: 100%;
+    max-width: 320px;
+}
+
 .project .container .paragraph-project .icon{
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -588,18 +595,28 @@ header.sticky #contact{
     }
 
     .home .home-content h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
-    .home .home-content h3{
+    .home .home-content h2{
         font-size: 1.2rem;
     }
     .home .home-content p{
         max-width: 80%;
     }
-    img{
+    .home .home-content .text{
+        font-size: 1rem;
+    }
+    .img{
         width: 300px;
         height: 300px;
         object-fit: cover;
+    }
+    .author{
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        font-size: 1rem;
+        padding-bottom: 10px;
     }
     /* About */
     .about .container{
@@ -656,18 +673,54 @@ header.sticky #contact{
         width: 425px;
         margin-top: 5px;
     }
+    /* Project */
+
+    .project{
+        margin: -50px 0;
+    }
+
+    .project .text h1{
+        font-size: 1.5rem;
+    }
+
+    .project .container .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .project .container .box img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .paragraph-project-one{
+        font-size: 1rem;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 50%;
+        text-align: center;
+    }
+    .paragraph-project .icon{
+        font-size: 1rem;
+    }
+    .paragraph-project p a{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     header .container .logo{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     header .container .navbar li a{
         display: none;
     }
     header .container .icon{
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .menu-bar.open{
         height: 205px;
@@ -685,36 +738,42 @@ header.sticky #contact{
     }
 
     /* open */
+
     .home .container{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         flex-direction: column;
+        margin-top: -0.1rem;
     }
     .home .home-content{
         max-width: 90%;
      }
 
     .home .home-content h1{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .home .home-content h2{
+        font-size: 1.2rem;
     }
     .home .home-content h3{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
-    .home-picture img{
+    .home .home-content p{
+        font-size: 0.8rem;
+    }
+
+    /* .home-picture .img{
+        display: none;
+    } */
+    .img{
         width: 140px;
         height: 140px;
         object-fit: cover;
     }
-
-    img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }
     .text{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .contact-me .download{
@@ -722,7 +781,7 @@ header.sticky #contact{
         background-color: #0ef;
         padding: 8px;
         border-radius: 4px; 
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 600;
     }
 
@@ -731,32 +790,45 @@ header.sticky #contact{
         background-color: transparent;
         padding: 8px;
         border-radius: 4px; 
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 600;
+    }
+    .author{
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        font-size: 0.8rem;
+        padding-bottom: 10px;
     }
 
     /* About */
+    .about{
+        margin-top: 20px;
+    }
 
     .about .container{
-        max-width: 90%;
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .about .container .column-one{
+        display: flex;
+        justify-content: center;
+        width: 50%;
     }
 
     .about .container .column-two{
-        max-width: 100%;
+        width: 50%;
     }
 
     .about .container .column-two h1{
         font-size: 1.5rem;
     }
 
-    .about .container .column-two p{
-        text-align: center;
-        font-size: 1rem;
+    .about .container .column-two .text-about p{
+        font-size: 0.8rem;
     }
 
-    .paragraph{
-        display: none;
-    }
 
     .about .container .column-one img{
         margin-top: 30px;
@@ -790,6 +862,43 @@ header.sticky #contact{
     }
     #html, #css, #js, #react, #node, #wordpress, #github, #git, #vscode, #asana, #figma::before{
         font-size: 0.85rem;
+    }
+    
+    /* Project */
+
+    .project{
+        margin: -50px 0;
+    }
+
+    .project .text h1{
+        font-size: 1.5rem;
+    }
+
+    .project .container .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .project .container .box img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .paragraph-project-one{
+        font-size: 0.8rem;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 50%;
+        text-align: center;
+    }
+    .paragraph-project .icon{
+        font-size: 0.8rem;
+    }
+    .paragraph-project p a{
+        font-size: 0.8rem;
     }
 }
 
@@ -828,6 +937,7 @@ header.sticky #contact{
         align-items: center;
         width: 100%;
         flex-direction: column;
+        margin-top: -0.1rem;
     }
      .home .home-content{
         max-width: 90%;
@@ -839,15 +949,15 @@ header.sticky #contact{
      .home .home-content h1{
         font-size: 1.3rem;
     }
-    .home .home-content h3{
+    .home .home-content h2{
         font-size: 1rem;
     }
     .home .home-content p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
-    img{
-        width: 150px;
-        height: 150px;
+    .img{
+        width: 130px;
+        height: 130px;
         object-fit: cover;
     }
 
@@ -856,7 +966,7 @@ header.sticky #contact{
         background-color: #0ef;
         padding: 7px;
         border-radius: 4px; 
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 500;
     }
 
@@ -865,7 +975,7 @@ header.sticky #contact{
         background-color: transparent;
         padding: 7px;
         border-radius: 4px; 
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 500;
     }
 
@@ -896,6 +1006,13 @@ header.sticky #contact{
         color: #0ef;
         font-size: 1rem;
     }
+    .author{
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        font-size: 0.7rem;
+        padding-bottom: 10px;
+    }
     /* About */
 
     .about .container{
@@ -915,19 +1032,19 @@ header.sticky #contact{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .about .container .column-two h2{
         display: flex;
         justify-content: center;
         align-items: center;    
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
-    .about .container .column-two p{
+    .about .container .column-two .text-about p{
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .about .container .column-one img{
         margin-top: 30px;
@@ -950,10 +1067,10 @@ header.sticky #contact{
 
     .service .text h1{
         /* position: absolute; */
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .service h2{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .onePart .bar .progress-line{
         width: 280px;
@@ -965,6 +1082,42 @@ header.sticky #contact{
     }
     #html, #css, #js, #react, #node, #wordpress, #github, #git, #vscode, #asana, #figma::before{
         font-size: 0.85rem;
+    }
+    /* Project */
+
+    .project{
+        margin: -50px 0;
+    }
+
+    .project .text h1{
+        font-size: 1.2rem;
+    }
+
+    .project .container .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .project .container .box img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .paragraph-project-one{
+        font-size: 0.7rem;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 75%;
+        text-align: center;
+    }
+    .paragraph-project .icon{
+        font-size: 0.8rem;
+    }
+    .paragraph-project p a{
+        font-size: 0.7rem;
     }
 }
 
@@ -1003,6 +1156,7 @@ header.sticky #contact{
         align-items: center;
         width: 100%;
         flex-direction: column;
+        margin-top: -0.1rem;
     }
     .home .home-content{
         max-width: 90%;
@@ -1010,18 +1164,18 @@ header.sticky #contact{
     .home .home-content h1{
         font-size: 1.2rem;
     }
-    .home .home-content h3{
+    .home .home-content h2{
         font-size: 0.8rem;
     }
     .home .home-content p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .home-picture img{
         width: 120px;
         height: 120px;
         object-fit: cover;
     }
-    img{
+    .img{
         width: 120px;
         height: 120px;
         object-fit: cover;
@@ -1031,7 +1185,7 @@ header.sticky #contact{
         background-color: #0ef;
         padding: 5px;
         border-radius: 4px; 
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 500;
     }
 
@@ -1040,11 +1194,11 @@ header.sticky #contact{
         background-color: transparent;
         padding: 5px;
         border-radius: 4px; 
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         font-weight: 500;
     }
     .home .icons{
-        margin-top: 5px;
+        margin-top: 3px;
         font-size: 0.8rem;
         cursor: pointer;
         font-weight: 800;
@@ -1063,6 +1217,13 @@ header.sticky #contact{
     .text{
         color: #0ef;
         font-size: 1rem;
+    }
+    .author{
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        font-size: 0.7rem;
+        padding: 10px;
     }
 
     /* About */
@@ -1084,8 +1245,8 @@ header.sticky #contact{
         font-size: 1rem;
     }
 
-    .about .container .column-two p{
-        font-size: 0.8rem;
+    .about .container .column-two .text-about p{
+        font-size: 0.7rem;
     }
 
     .about .container .column-one img{
@@ -1108,10 +1269,11 @@ header.sticky #contact{
     }
 
     .service .text h1{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .service .technic{
         font-size: 1rem;
+        margin-top: -1rem;
     }
     .onePart .bar .progress-line{
         width: 220px;
@@ -1123,6 +1285,40 @@ header.sticky #contact{
     }
     #html, #css, #js, #react, #node, #wordpress, #github, #git, #vscode, #asana, #figma::before{
         font-size: 0.8rem;
+    }
+
+    /* Project */
+    .project{
+        margin: -100px 0;
+    }
+
+    .project .text h1{
+        font-size: 1rem;
+    }
+    .project .container .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .project .container .box img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .paragraph-project-one{
+        font-size: 0.7rem;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .paragraph-project .icon{
+        font-size: 0.5rem;
+    }
+    .paragraph-project p a{
+        font-size: 0.7rem;
     }
 }
 
