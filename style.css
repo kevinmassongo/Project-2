@@ -1157,11 +1157,11 @@ header.sticky #contact{
         font-size: 0.8rem;
     }
     .home .home-content p{
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     .home-picture img{
-        width: 110px;
-        height: 110px;
+        width: 120px;
+        height: 120px;
         object-fit: cover;
     }
     .img{
