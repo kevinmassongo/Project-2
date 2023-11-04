@@ -18,12 +18,14 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 1230px;
-    margin: auto;
     transition: all 0.5s linear;
-    padding: 20px;
+    padding: 20px 10%;
     z-index: 1;
+    position: fixed;
+    background-color: #081C29;
 }
 
 header .container .navbar{
@@ -90,38 +92,6 @@ header .container .icon{
     font-size: 1.5rem;
 }
 
-header.sticky{
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    transition: 0.1s linear;
-}
-
-header.sticky .container .logo{
-    font-size: 1.5rem;
-    color:#081C29;
-    font-weight: 700;
-    text-decoration: none;
-    border: 2px solid black;
-    padding: 5px;
-}
-
-header.sticky .navbar li a{
-    font-size: 1rem;
-    color: #081C29;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-header.sticky #contact{
-    background-color:#081C29;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
 /* menu-bar */
 
@@ -160,10 +130,14 @@ header.sticky #contact{
 /* home */
 
 .home{
+    position: relative;
     display: flex;
-    justify-content: center;
-    height: 90vh;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 75px 10% 0;
 }
+
 .home .container{
     display: flex;
     justify-content: center;
@@ -282,13 +256,14 @@ header.sticky #contact{
 /* About */
 
 
-
 .about .container{
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    height: 85vh;
+    align-items: center;
 }
 
 .about .container .column-two{
@@ -581,22 +556,24 @@ header.sticky #contact{
 }
 
 @media screen and (max-width: 1024px) {
+
     .container .logo{
         font-size: 1.5rem;
     }
 
     /* open */
-    .home{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        max-width: 900px;
-        margin: auto;
-        z-index: 0;
-    }
 
+    .home .home-content h1{
+        font-size: 1.5rem;
+    }
+    .home .home-content h2{
+        font-size: 1.2rem;
+    }
     .home .home-content p{
         max-width: 80%;
+    }
+    .home .home-content .text{
+        font-size: 1rem;
     }
     .img{
         width: 300px;
@@ -619,8 +596,16 @@ header.sticky #contact{
         position: relative;
         width: 100%;
         left: 1%;
+        font-size: 1.5rem;
     }
 
+    .about .container .column-two h2{
+        font-size: 1.2rem;
+    }
+
+    .about .container .column-two p{
+        font-size: 1rem;
+    }
     .paragraph{
         display: none;
     }
@@ -643,7 +628,13 @@ header.sticky #contact{
         padding: 50px;
         margin: auto;
     }
+    .service .text h1{
+        font-size: 1.5rem;
+    }
 
+    .service .technic{
+        font-size: 1.3rem;
+    }
     .onePart .bar .progress-line{
         width: 425px;
         margin-top: 5px;
@@ -658,6 +649,9 @@ header.sticky #contact{
         margin: -50px 0;
     }
 
+    .project .text h1{
+        font-size: 1.5rem;
+    }
 
     .project .container .box {
         display: flex;
@@ -673,6 +667,7 @@ header.sticky #contact{
     }
 
     .paragraph-project-one{
+        font-size: 1rem;
         margin-top: 10px;
         width: 100%;
         max-width: 50%;
@@ -681,11 +676,14 @@ header.sticky #contact{
     .paragraph-project .icon{
         font-size: 1rem;
     }
+    .paragraph-project p a{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
     html{
-        font-size: 85%;
+        font-size: 90%;
     }
     header .container .logo{
         font-size: 1.4rem;
@@ -701,6 +699,7 @@ header.sticky #contact{
         transition: 0.2s linear;
         left: 60%;
         height: 170px;
+        top: 15%;
     }
 
     header.sticky .container .logo{
@@ -713,18 +712,15 @@ header.sticky #contact{
 
     /* open */
 
-    .home .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
-        margin-top: -0.1rem;
+    .home .home-content h1{
+        font-size: 1.4rem;
     }
-    .home .home-content{
-        max-width: 90%;
-     }
-
+    .home .home-content h2{
+        font-size: 1.2rem;
+    }
+    .home .home-content h3{
+        font-size: 1rem;
+    }
 
     .img{
         width: 180px;
@@ -738,6 +734,7 @@ header.sticky #contact{
         background-color: #0ef;
         padding: 8px;
         border-radius: 4px; 
+        font-size: .8rem;
         font-weight: 600;
     }
 
@@ -746,6 +743,7 @@ header.sticky #contact{
         background-color: transparent;
         padding: 8px;
         border-radius: 4px; 
+        font-size: .8rem;
         font-weight: 600;
     }
     .author{
@@ -758,7 +756,8 @@ header.sticky #contact{
     /* About */
 
     .about .container{
-        width: 90%;
+        margin-top: 5em;
+        width: 100%;
         gap: 2rem;
     }
 
@@ -771,6 +770,12 @@ header.sticky #contact{
     .about .container .column-two{
         width: 50%;
     }
+
+    .about .container .column-two h1{
+        font-size: 1.5rem;
+    }
+
+
 
     .about .container .column-one img{
         margin-top: 30px;
@@ -788,6 +793,12 @@ header.sticky #contact{
         gap: 50px;
     }
 
+    .service .text h1{
+        font-size: 1.5rem;
+    }
+    .service h2{
+        font-size: 1.3rem;
+    }
     .onePart .bar .progress-line{
         width: 375px;
         margin-top: 5px;
@@ -806,6 +817,10 @@ header.sticky #contact{
         margin: -50px 0;
     }
 
+    .project .text h1{
+        font-size: 1.5rem;
+    }
+
     .project .container .box {
         display: flex;
         align-items: center;
@@ -820,6 +835,7 @@ header.sticky #contact{
     }
 
     .paragraph-project-one{
+        font-size: 0.8rem;
         margin-top: 10px;
         width: 100%;
         max-width: 50%;
@@ -828,10 +844,15 @@ header.sticky #contact{
     .paragraph-project .icon{
         font-size: 0.8rem;
     }
-
+    .paragraph-project p a{
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    html{
+        font-size: 85%;
+    }
     header .container .logo{
         font-size: 1.5rem;
     }
@@ -840,6 +861,7 @@ header.sticky #contact{
     }
     header .container .icon{
         display: block;
+        font-size: 1.5rem;
     }
     .menu-bar.open{
         transition: 0.2s linear;
@@ -848,6 +870,7 @@ header.sticky #contact{
         right: 0%;
         width: 100%;
         height: 170px;
+        top: 15%;
     }
     header.sticky .container .logo{
         font-size: 1.2rem;
@@ -864,19 +887,21 @@ header.sticky #contact{
         align-items: center;
         width: 100%;
         flex-direction: column;
-        margin-top: -0.1rem;
-    }
-     .home .home-content{
-        max-width: 90%;
-     }
+    }   
 
      .home .home-picture{
         position: relative;
      }
+     .home .home-content h1{
+        font-size: 1.3rem;
+    }
+    .home .home-content h2{
+        font-size: 1rem;
+    }
 
     .img{
-        width: 160px;
-        height: 160px;
+        width: 130px;
+        height: 130px;
         object-fit: cover;
     }
 
@@ -885,6 +910,7 @@ header.sticky #contact{
         background-color: #0ef;
         padding: 7px;
         border-radius: 4px; 
+        font-size: 0.7rem;
         font-weight: 500;
     }
 
@@ -893,6 +919,7 @@ header.sticky #contact{
         background-color: transparent;
         padding: 7px;
         border-radius: 4px; 
+        font-size: 0.7rem;
         font-weight: 500;
     }
 
@@ -921,15 +948,15 @@ header.sticky #contact{
 
     .text{
         color: #0ef;
-        /* font-size: 1rem; */
+        font-size: 1rem;
     }
     .author{
         margin: auto;
         align-items: center;
         width: 100%;
-        /* font-size: 0.8rem; */
         padding-bottom: 10px;
     }
+
     /* About */
 
     .about .container{
@@ -938,7 +965,6 @@ header.sticky #contact{
         align-items: center;
         width: 100%;
         flex-direction: column-reverse;
-        margin-top: 50px;
     }
 
     .about .container .column-two{
@@ -950,20 +976,19 @@ header.sticky #contact{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* font-size: 1.2rem; */
+        font-size: 1.2rem;
     }
 
     .about .container .column-two h2{
         display: flex;
         justify-content: center;
         align-items: center;    
-        /* font-size: 1rem; */
+        font-size: 1rem;
     }
 
     .about .container .column-two .text-about p{
         text-align: center;
-        font-size: 0.7rem;
-    }
+        }
     .about .container .column-one img{
         margin-top: 30px;
     }
@@ -983,10 +1008,13 @@ header.sticky #contact{
         margin-top: -50px;
     }
 
-
-    /* .service h2{
+    .service .text h1{
+        /* position: absolute; */
+        font-size: 1.2rem;
+    }
+    .service h2{
         font-size: 1rem;
-    } */
+    }
     .onePart .bar .progress-line{
         width: 280px;
         margin-top: 5px;
@@ -1004,6 +1032,9 @@ header.sticky #contact{
         margin: -50px 0;
     }
 
+    .project .text h1{
+        font-size: 1.2rem;
+    }
 
     .project .container .box {
         display: flex;
@@ -1019,6 +1050,7 @@ header.sticky #contact{
     }
 
     .paragraph-project-one{
+        font-size: 0.7rem;
         margin-top: 10px;
         width: 100%;
         max-width: 75%;
@@ -1027,9 +1059,15 @@ header.sticky #contact{
     .paragraph-project .icon{
         font-size: 0.8rem;
     }
+    .paragraph-project p a{
+        font-size: 0.7rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
+    html{
+        font-size: 80%;
+    }
     header .container .logo{
         font-size: 1.2rem;
     }
@@ -1047,6 +1085,7 @@ header.sticky #contact{
         right: 0%;
         width: 100%;
         height: 170px;
+        top: 14%;
     }
 
     header.sticky .container .logo{
@@ -1058,17 +1097,14 @@ header.sticky #contact{
     }
      /* open */
      .home .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         flex-direction: column;
-        margin-top: -0.1rem;
     }
-    .home .home-content{
-        max-width: 90%;
+    .home .home-content h1{
+        font-size: 1.2rem;
     }
-
+    .home .home-content h2{
+        font-size: 0.8rem;
+    }
 
     .home-picture img{
         width: 120px;
@@ -1085,6 +1121,7 @@ header.sticky #contact{
         background-color: #0ef;
         padding: 5px;
         border-radius: 4px; 
+        font-size: 0.7rem;
         font-weight: 500;
     }
 
@@ -1093,6 +1130,7 @@ header.sticky #contact{
         background-color: transparent;
         padding: 5px;
         border-radius: 4px; 
+        font-size: 0.7rem;
         font-weight: 500;
     }
     .home .icons{
@@ -1119,7 +1157,6 @@ header.sticky #contact{
         margin: auto;
         align-items: center;
         width: 100%;
-        font-size: 0.8rem;
         padding: 10px;
     }
 
@@ -1135,7 +1172,13 @@ header.sticky #contact{
 
     .about .container .column-two h1{
         text-align: center;
+        font-size: 1.2rem;
     }
+
+    .about .container .column-two h2{
+        font-size: 1rem;
+    }
+
 
     .about .container .column-one img{
         margin-top: 30px;
@@ -1156,7 +1199,11 @@ header.sticky #contact{
         margin-top: -30px;
     }
 
+    .service .text h1{
+        font-size: 1.2rem;
+    }
     .service .technic{
+        font-size: 1rem;
         margin-top: -1rem;
     }
     .onePart .bar .progress-line{
@@ -1200,6 +1247,9 @@ header.sticky #contact{
     }
     .paragraph-project .icon{
         font-size: 0.5rem;
+    }
+    .paragraph-project p a{
+        font-size: 0.7rem;
     }
 }
 
