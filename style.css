@@ -611,9 +611,7 @@ header .container .icon{
         display: none;
     }
 
-    .about .container .column-one img{
-        margin-top: 20px;
-    }
+
     #paragraph-click{
         display: block;
         margin-bottom: 30px;
@@ -777,9 +775,6 @@ header .container .icon{
         font-size: 1.5rem;
     }
 
-    .about .container .column-one img{
-        margin-top: 30px;
-    }
     #paragraph-click{
         display: block;
         margin-bottom: 30px;
@@ -991,9 +986,9 @@ header .container .icon{
     .about .container .column-two .text-about p{
         text-align: center;
         }
-    .about .container .column-one img{
+    /* .about .container .column-one img{
         margin-top: 30px;
-    }
+    } */
     #paragraph-click{
         display: flex;
         justify-content: center;
@@ -1104,12 +1099,7 @@ header .container .icon{
     .home .home-content h1{
         font-size: 1.2rem;
     }
-
-    /* .home-picture img{
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-    } */
+    
     .img{
         width: 150px;
         height: 150px;
