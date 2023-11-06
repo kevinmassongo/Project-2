@@ -106,7 +106,7 @@ header .container .icon{
 }   
 
 .menu-bar.open{
-    top: 13%;
+    top: 12%;
     transform: translateX(0px);
 }
 
@@ -758,7 +758,6 @@ header .container .icon{
     /* About */
 
     .about .container{
-        margin-top: -10%;
         width: 100%;
         gap: 2rem;
     }
@@ -989,9 +988,7 @@ header .container .icon{
     .about .container .column-two .text-about p{
         text-align: center;
         }
-    /* .about .container .column-one img{
-        margin-top: 30px;
-    } */
+
     #paragraph-click{
         display: flex;
         justify-content: center;
