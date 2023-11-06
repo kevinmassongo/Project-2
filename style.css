@@ -256,19 +256,23 @@ header .container .icon{
 
 /* About */
 
+.about{
+    padding: 100px 100px 0px 100px;
+}
 
 .about .container{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    height: 85vh;
-    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.about .container .column-one{
+    width: 50%;
 }
 
 .about .container .column-two{
-    max-width: 50%;
+    width: 50%;
+    max-width: 80%;
 }
 
 .h1-about{
@@ -284,26 +288,11 @@ header .container .icon{
     margin-bottom: 1rem;
 }
 
-#paragraph-click{
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 1rem;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: all 0.5s linear;
-    display: none;
-}
-
-#paragraph-click:hover{
-    background-color: #0ef;
-}
 
 /* Service */
 
 .service{
-    padding: 100px;
+    padding: 100px 100px 0px 100px;
 }
 
 
@@ -501,7 +490,7 @@ header .container .icon{
 /* Project */
 
 .project{
-    padding: 0 100px 100px 100px;
+    padding: 100px 100px 0px 100px;
 }
 
 .project .text{
@@ -590,14 +579,7 @@ header .container .icon{
         padding-bottom: 10px;
     }
     /* About */
-
-    .about .container{
-        max-width: 90%;
-    }
     .about .container .column-two h1{
-        position: relative;
-        width: 100%;
-        left: 1%;
         font-size: 1.5rem;
     }
 
@@ -608,26 +590,9 @@ header .container .icon{
     .about .container .column-two p{
         font-size: 1rem;
     }
-    .paragraph{
-        display: none;
-    }
-
-
-    #paragraph-click{
-        display: block;
-        margin-bottom: 30px;
-    }
 
     /* Service */
 
-    .service .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        padding: 50px;
-        margin: auto;
-    }
     .service .text h1{
         font-size: 1.5rem;
     }
@@ -645,9 +610,6 @@ header .container .icon{
     }
     /* Project */
 
-    .project{
-        margin: -50px 0;
-    }
 
     .project .text h1{
         font-size: 1.5rem;
@@ -756,39 +718,19 @@ header .container .icon{
 
     /* About */
 
-    .about .container{
-        margin-top: -20%;
-        width: 100%;
-        gap: 2rem;
-    }
-
-    .about .container .column-one{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-    }
-
-    .about .container .column-two{
-        width: 50%;
+    .about{
+        margin-top: -100px;
     }
 
     .about .container .column-two h1{
         font-size: 1.5rem;
     }
 
-    #paragraph-click{
-        display: block;
-        margin-bottom: 30px;
-    }
     .h1-about span{
         margin-left: 5px;
     }
         /* Service */
     
-    .service .container{
-        margin-top: -20%;
-    }
-
     .service .container .boxOne{
         flex-direction: column;
         gap: 50px;
@@ -814,18 +756,12 @@ header .container .icon{
     
     /* Project */
 
-    .project{
-        margin: -50px 0;
-    }
 
     .project .text h1{
         font-size: 1.5rem;
     }
 
     .project .container .box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
     }
 
@@ -871,7 +807,7 @@ header .container .icon{
         left: 0%;
         right: 0%;
         width: 100%;
-        height: 170px;
+        height: 155px;
     }
     header.sticky .container .logo{
         font-size: 1.5rem;
@@ -888,7 +824,6 @@ header .container .icon{
         align-items: center;
         width: 100%;
         flex-direction: column;
-        margin-top: 2%;
     }   
 
      .home .home-picture{
@@ -971,7 +906,7 @@ header .container .icon{
     }
 
     .about .container .column-two{
-        max-width: 85%;
+        max-width: 100%;
         width: 100%;
     }
 
@@ -991,9 +926,9 @@ header .container .icon{
 
     .about .container .column-two .text-about p{
         text-align: center;
-        }
+    }
 
-    #paragraph-click{
+    .about .container .column-one{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1035,10 +970,6 @@ header .container .icon{
         font-size: 0.85rem;
     }
     /* Project */
-
-    .project{
-        margin: -50px 0;
-    }
 
     .project .text h1{
         font-size: 1.2rem;
@@ -1092,7 +1023,7 @@ header .container .icon{
         left: 0%;
         right: 0%;
         width: 100%;
-        height: 170px;
+        height: 155px;
     }
 
     header.sticky .container .logo{
