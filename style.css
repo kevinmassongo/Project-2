@@ -967,7 +967,6 @@ header .container .icon{
         align-items: center;
         width: 100%;
         flex-direction: column-reverse;
-        margin-top: 6em;
     }
 
     .about .container .column-two{
@@ -1183,9 +1182,11 @@ header .container .icon{
     .about .container .column-one img{
         margin-top: 30px;
     }
+
     .h1-about span{
         margin-left: 5px;
     }
+    
     .contact-me{
         display: flex;
         align-items: center;
