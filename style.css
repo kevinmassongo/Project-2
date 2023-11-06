@@ -272,7 +272,6 @@ header .container .icon{
 
 .about .container .column-two{
     width: 50%;
-    max-width: 80%;
 }
 
 .h1-about{
@@ -906,7 +905,6 @@ header .container .icon{
     }
 
     .about .container .column-two{
-        max-width: 100%;
         width: 100%;
     }
 
@@ -943,13 +941,11 @@ header .container .icon{
         height: 175px;
         object-fit: cover;
         border-radius: 10px;
+        margin-top: 15px;
     }
 
     /* Service */
 
-    .service{
-        margin-top: -50px;
-    }
 
     .service .text h1{
         /* position: absolute; */
