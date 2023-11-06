@@ -758,7 +758,7 @@ header .container .icon{
     /* About */
 
     .about .container{
-        margin-top: -10%;
+        margin-top: -20%;
         width: 100%;
         gap: 2rem;
     }
@@ -787,7 +787,7 @@ header .container .icon{
         /* Service */
     
     .service .container{
-        margin-top: -10%;
+        margin-top: -20%;
     }
 
     .service .container .boxOne{
@@ -1009,7 +1009,7 @@ header .container .icon{
         width: 175px;
         height: 175px;
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 10px;
     }
 
     /* Service */
@@ -1196,9 +1196,9 @@ header .container .icon{
 
     .about .container .column-one img{
         width: 150px;
-        height: 140px;
+        height: 150px;
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 10px;
     }
 
     /* Service */
