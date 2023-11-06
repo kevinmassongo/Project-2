@@ -758,6 +758,7 @@ header .container .icon{
     /* About */
 
     .about .container{
+        margin-top: -10%;
         width: 100%;
         gap: 2rem;
     }
@@ -784,6 +785,11 @@ header .container .icon{
         margin-left: 5px;
     }
         /* Service */
+    
+    .service .container{
+        margin-top: -10%;
+    }
+
     .service .container .boxOne{
         flex-direction: column;
         gap: 50px;
@@ -999,6 +1005,13 @@ header .container .icon{
         margin-left: 5px;
     }
 
+    .about .container .column-one img{
+        width: 175px;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
     /* Service */
 
     .service{
@@ -1179,6 +1192,13 @@ header .container .icon{
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+
+    .about .container .column-one img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     /* Service */
